@@ -11,5 +11,7 @@ Creating an ERC-20 Token which is deployed on the Ropsten test network
 * Depending on number of transactions on the blockchain, there may be a slight delay (~1 min). Upon receiving the token, the page automatically refreshes
 and displays the available SToken balance associated with the address. To view more details about the transaction visit https://ropsten.etherscan.io and search your address.
 
+#
+
 ### Suggestions and Feedback
 I am still learning how to build DApps on Ethereum and any suggestion / feedback to improve the project is highly appreciated.
