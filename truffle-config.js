@@ -1,5 +1,5 @@
 var HDWalletProvider = require("truffle-hdwallet-provider");
-const MNEMONIC = '9cf8c82ef762007a1d2a19ccd4bebb424884eff392e18d93f10317c7451aebbf';
+const MNEMONIC = 'enter_private_key';
 /**
  * Use this file to configure your truffle project. It's seeded with some
  * common settings for different networks and features like migrations,
