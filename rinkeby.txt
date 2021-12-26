@@ -1,0 +1,8 @@
+Public address of the key:   0xB29dAC0E00c5a5286032500BffC45d14Deb0dBa2
+Path of the secret key file: C:\Users\shone\AppData\Local\Ethereum\rinkeby\keystore\UTC--2021-12-25T17-35-22.689723900Z--b29dac0e00c5a5286032500bffc45d14deb0dba2
+pass phrase : i am shone 
+
+start rinkeby : geth --rinkeby --syncmode "light" //orelse we will have to download all block data from inception
+to check if its working : geth attach ipc:\\.\pipe\geth.ipc
+to create a new account : geth --rinkeby account new
+geth attach ipc:\\.\pipe\geth.ipc

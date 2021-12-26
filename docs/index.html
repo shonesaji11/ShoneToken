@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shone Token ICO</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container" style="width: 850px; margin-top: 250px;">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="text-center">SHONE TOKEN ICO SALE</h1>
+                <hr/>
+                <br/>
+            </div>
+            <div id="loader"> <!-- ENABLED WHILE FETCHING DATA FROM BC AND DISABLED AFTER-->
+                <p class="text-center">Loading ...</p>
+            </div>
+            <div class="text-center" id="content">
+                <p>
+                    Introducing Shone Token (SToken) Token price is <span class="token-price"></span> ETH.
+                    You currently have <span class="dapp-balance"></span>&nbsp;SToken(s).
+                </p>
+                <br/>
+                <form onSubmit="App.buyToken(); return false;" role="form">
+                    <div class="form-group">
+                        <div class="input-group">
+                            
+                            <div class="input-group mb-3">
+                                <input type="number" id="numberOfToken" name="number" value="1" min="1" pattern="[0-9]" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="submit">Buy Tokens</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <br>
+                <div class="progress">
+                    <div id="progress" class="progress-bar progress-bar-striped active" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <br>
+                <p><span class="tokens-sold"></span> / <span class="tokens-available"></span> SToken sold</p>
+                <hr>
+                <p id="accountAddress"></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="src\js\jquery.min.js"></script>
+<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="src\js\web3.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="src\js\truffle-contract.min.js"></script>
+<script src="src\js\app.js"></script>
+</html>
